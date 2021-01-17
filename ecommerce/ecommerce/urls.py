@@ -22,7 +22,7 @@ from django.contrib.auth.views import LogoutView
 
 from addresses.views import checkout_address_create_view, checkout_address_reuse_view
 from ecommerce.views import home_page, about_page, contact_page
-from accounts.views import login_page, register_page, guest_register_view
+from accounts.views import LoginView, RegisterView, guest_register_view
 from carts.views import cart_detail_api_view
 
 urlpatterns = [
@@ -31,11 +31,11 @@ urlpatterns = [
     re_path(r'^bootstrap/$', TemplateView.as_view(template_name='bootstrap/example.html')),
     re_path(r'^about/$', about_page, name='about_page_url'),
     re_path(r'^contact/$', contact_page, name='contact_page_url'),
-    re_path(r'^login/$', login_page, name='login_page_url'),
+    re_path(r'^login/$', LoginView.as_view(), name='login_page_url'),
     re_path(r'^checkout/address/create/$', checkout_address_create_view, name='checkout_address_create'),
     re_path(r'^checkout/address/reuse/$', checkout_address_reuse_view, name='checkout_address_reuse'),
     re_path(r'^register/guest/$', guest_register_view, name='guest_register'),
-    re_path(r'^register/$', register_page, name='register_page_url'),
+    re_path(r'^register/$', RegisterView.as_view(), name='register_page_url'),
     re_path(r'^logout/$', LogoutView.as_view(), name='logout_page_url'),
     re_path(r'^api/cart/$', cart_detail_api_view, name='api-cart_url'),
     re_path(r'^cart/', include(("carts.urls", 'cart'), namespace='cart')),

@@ -1,0 +1,44 @@
+    [
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "Hat",
+        "slug": "hat",
+        "description": "This is an awesome Hat. Buy it!",
+        "price": "8.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-10-21T20:43:13.024Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "T-Shirt",
+        "slug": "t-shirt",
+        "description": "This is an awesome T-Shirt. Buy it!",
+        "price": "10.00",
+        "image": "products/2119248431/2119248431.jpeg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-10-21T20:43:13.024Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Apple iPhone 11 64GB White",
+        "slug": "apple-iphone-11-64gb-white",
+        "description": "Liquid Retina HD display\r\n6.1‑inch (diagonal) all-screen LCD Multi-Touch display with IPS technology\r\n1792‑by‑828‑pixel resolution at 326 ppi\r\n1400:1 contrast ratio (typical)\r\nTrue Tone display\r\nWide color display (P3)\r\nHaptic Touch\r\n625 nits max brightness (typical)\r\nFingerprint‑resistant oleophobic coating\r\nSupport for display of multiple languages and characters simultaneously\r\nDual 12MP Ultra Wide and Wide cameras\r\nUltra Wide: ƒ/2.4 aperture and 120° field of view\r\nWide: ƒ/1.8 aperture\r\n2x optical zoom out\r\nDigital zoom up to 5x\r\nPortrait mode with advanced bokeh and Depth Control\r\nPortrait Lighting with six effects (Natural, Studio, Contour, Stage, Stage Mono, High-Key Mono)\r\nOptical image stabilization (Wide)\r\nFive‑element lens (Ultra Wide); six‑element lens (Wide)\r\nBrighter True Tone flash with Slow Sync\r\nPanorama (up to 63MP)\r\nSapphire crystal lens cover\r\n100% Focus Pixels (Wide)\r\nNight mode (Wide)\r\nDeep Fusion (Wide)\r\nNext-generation Smart HDR for photos\r\nWide color capture for photos and Live Photos\r\nAdvanced red‑eye correction\r\nAuto image stabilization\r\nBurst mode\r\nPhoto geotagging\r\nImage formats captured: HEIF and JPEG",
+        "price": "599.99",
+        "image": "products/2939006379/2939006379.png",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-10-21T20:43:13.024Z"
+    }
+}
+]
